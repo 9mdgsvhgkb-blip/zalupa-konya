@@ -17,15 +17,15 @@ body {
   inset: 0;  
   background: rgba(0, 0, 0, 0.45);  
   backdrop-filter: blur(4px);  
-  opacity: 0;  
+  visibility: hidden;
   pointer-events: none;  
   transition: opacity 0.3s ease;  
   z-index: 800;  
 }  
   
-#overlay.active {  
-  opacity: 1;  
-  pointer-events: auto;  
+#overlay.active {
+  visibility: visible;
+  pointer-events: auto;
 }  
   
 .header {  
