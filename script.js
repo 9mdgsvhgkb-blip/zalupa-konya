@@ -1,18 +1,3 @@
-window.addEventListener('DOMContentLoaded', async () => {    
-    try {    
-        const res = await fetch('/api/check_auth', {    
-            credentials: 'include'  
-        });    
-        if (!res.ok) throw new Error('Не авторизован');    
-        const data = await res.json();    
-        if (!data.authenticated) {    
-            window.location.href = '/log/';    
-        }    
-    } catch (e) {    
-        window.location.href = '/log/';    
-    }    
-});  
-    
 const hamburger = document.getElementById('hamburger');      
 const sidebar = document.getElementById('sidebar');      
 const overlay = document.getElementById('overlay');      
