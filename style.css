@@ -186,10 +186,11 @@ main.main-content {
   display: flex;
   flex-direction: column;
   align-items: center;
-  justify-content: center;      /* вертикальное центрирование */
-  min-height: calc(100vh - 64px); /* учёт хедера */
-  padding-top: 64px;            /* отступ сверху, чтобы не налезать на фикс. хедер */
+  justify-content: center; /* центрируем вертикально */
+  min-height: calc(100vh - 64px); /* вычитаем высоту header */
+  padding-top: 64px; /* чтобы не налезало на фиксированный header */
   text-align: center;
+  box-sizing: border-box;
 }
 
 .avatar-frame {
@@ -210,7 +211,7 @@ main.main-content {
   height: 130px;
   border-radius: 50%;
   object-fit: cover;
-  border: 2px solid #0e0f13; 
+  border: 2px solid #0e0f13;
 }
 
 .profile-name {
