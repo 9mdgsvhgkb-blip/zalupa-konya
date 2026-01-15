@@ -194,18 +194,18 @@ body {
 }    
 
 .main-content {
-  display: flex;
-  flex-direction: column;
-  align-items: center;      
-  justify-content: flex-start;
-  padding-top: 80px;        
-  min-height: calc(100vh - 64px);
-  width: 100%;
+  display: flex !important;
+  flex-direction: column !important;
+  align-items: center !important;        /* горизонтальное центрирование */
+  justify-content: flex-start !important; /* вертикально сверху */
+  padding-top: 80px !important;          /* чтобы не перекрывал хэдер */
+  min-height: calc(100vh - 64px) !important; /* высота минус header */
+  width: 100% !important;
 }
 
 .profile-center {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  text-align: center;      
+  display: flex !important;
+  flex-direction: column !important;
+  align-items: center !important;
+  text-align: center !important;         /* для текста под аватаркой */
 }
