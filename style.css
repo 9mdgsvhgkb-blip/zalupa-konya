@@ -11,7 +11,11 @@ body {
   min-height: 100vh;  
   overflow-x: hidden;  
 }  
-  
+
+#page.blur {
+  filter: blur(4px);
+}
+
 #overlay {  
   position: fixed;  
   inset: 0;  
