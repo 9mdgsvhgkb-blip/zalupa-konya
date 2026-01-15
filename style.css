@@ -178,29 +178,30 @@ body {
     padding: 14px 18px;      
   }      
   
-.profile-center .profile-avatar {    
-  width: 120px;    
-  height: 120px;    
-  border-radius: 50%;    
-  object-fit: cover;    
-  margin-bottom: 16px;    
-  border: 3px solid #6366f1;    
-}    
-  
-.profile-center .profile-name {    
-  font-size: 20px;    
-  font-weight: 600;    
-  color: #e5e7eb;    
-}    
 
 .main-content {
-  display: flex !important;
-  flex-direction: column !important;
-  align-items: center !important;        /* горизонтальное центрирование */
-  justify-content: flex-start !important; /* вертикально сверху */
-  padding-top: 80px !important;          /* чтобы не перекрывал хэдер */
-  min-height: calc(100vh - 64px) !important; /* высота минус header */
-  width: 100% !important;
+  width: 100%;
+  max-width: 600px;        /* ограничение ширины */
+  margin: 80px auto 0 auto; /* отступ сверху под header, горизонтальный центр */
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+
+.profile-center .profile-avatar {
+  width: 120px;
+  height: 120px;
+  border-radius: 50%;
+  object-fit: cover;
+  margin-bottom: 16px;
+  border: 3px solid #6366f1;
+}
+
+.profile-center .profile-name {
+  font-size: 20px;
+  font-weight: 600;
+  color: #e5e7eb;
 }
 
 .profile-center {
