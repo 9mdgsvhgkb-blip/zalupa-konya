@@ -12,10 +12,6 @@ body {
   overflow-x: hidden;  
 }  
 
-#page.blur {
-  filter: blur(4px);
-}
-
 #overlay {  
   position: fixed;  
   inset: 0;  
