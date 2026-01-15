@@ -17,11 +17,10 @@ body {
   inset: 0;  
   background: rgba(0, 0, 0, 0.45);  
   backdrop-filter: blur(4px); 
-  opacity: 0;
   visibility: hidden;
   pointer-events: none;  
   transition: opacity 0.3s ease;  
-  z-index: 800;  
+  z-index: 999;  
 }  
   
 #overlay.active {
@@ -86,7 +85,7 @@ body {
   height: 100%;  
   background: #111318;  
   border-right: 1px solid #1f2430;  
-  z-index: 1001;  
+  z-index: 1000;  
   transition: left 0.25s ease;  
 }  
   
