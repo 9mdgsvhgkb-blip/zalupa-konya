@@ -1,26 +1,4 @@
 // ----------------------
-// Проверка авторизации и рендер профиля
-// ----------------------
-window.addEventListener('DOMContentLoaded', async () => {
-  try {
-    const res = await fetch('/api/check_auth', {
-      credentials: 'include'
-    });
-    if (!res.ok) throw new Error('Не авторизован');
-    const data = await res.json();
-    if (!data.authenticated) throw new Error('Не авторизован');
-
-    // ПОЛЬЗОВАТЕЛЬ АВТОРИЗОВАН
-    renderProfile(data.user);
-
-    // Инициализация sidebar, гамбургера и overlay
-    initSidebar();
-  } catch (e) {
-    window.location.href = '/log/';
-  }
-});
-
-// ----------------------
 // Функция рендера профиля
 // ----------------------
 function renderProfile(user) {
