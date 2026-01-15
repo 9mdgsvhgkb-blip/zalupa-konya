@@ -186,9 +186,9 @@ main.main-content {
   display: flex;
   flex-direction: column;
   align-items: center;
-  justify-content: center;
-  min-height: calc(100vh - 64px);  
-  padding-top: 64px;
+  justify-content: center;      /* вертикальное центрирование */
+  min-height: calc(100vh - 64px); /* учёт хедера */
+  padding-top: 64px;            /* отступ сверху, чтобы не налезать на фикс. хедер */
   text-align: center;
 }
 
@@ -218,11 +218,4 @@ main.main-content {
   font-weight: 700;
   color: #e5e7eb;
   text-shadow: 0 2px 5px rgba(0,0,0,0.5);
-}
-
-.main-content {
-  padding-top: 80px; 
-  display: flex;
-  flex-direction: column;
-  align-items: center;
 }
