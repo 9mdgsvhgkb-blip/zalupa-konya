@@ -188,6 +188,7 @@ body {
   display: flex;
   flex-direction: column;
   align-items: center;
+  padding-top: 96px;
   text-align: center;
 }
 
