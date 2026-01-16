@@ -230,3 +230,8 @@ body {
     width: 50px;      /* желаемый размер аватара */
     height: 50px;     /* желаемый размер аватара */
     border-radius: 50%;
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
