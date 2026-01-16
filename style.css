@@ -231,3 +231,31 @@ input:focus::placeholder {
 input:focus::-webkit-input-placeholder {    
   color: transparent;    
 }
+
+#codeBlock {
+  width: 280px;
+  padding: 0;
+  max-height: 0;
+  overflow: hidden;
+  opacity: 0;
+  transition: all 0.4s ease;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+#codeBlock.show {
+  max-height: 100px; /* достаточно для одного инпута */
+  padding: 14px 0;
+  opacity: 1;
+}
+
+#codeBlock input {
+  width: 100%;
+  padding: 14px;
+  border-radius: 8px;
+  border: none;
+  font-size: 16px;
+  text-align: center;
+  color: #2e2a27;
+}
