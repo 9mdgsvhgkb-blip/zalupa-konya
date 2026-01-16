@@ -192,8 +192,8 @@ body {
 }
 
 .profile-center .profile-avatar {
-  width: 100px;
-  height: 100px;
+  width: 120px;
+  height: 120px;
   border-radius: 50%;
   object-fit: cover;
   margin-bottom: 16px;
@@ -218,4 +218,10 @@ body {
   font-weight: 600;
   margin-bottom: 32px;
   color: #e5e7eb;
+}
+
+.profile-center .profile-avatar-svg,
+.profile-center svg.profile-avatar {
+  width: 100px;
+  height: 100px;
 }
