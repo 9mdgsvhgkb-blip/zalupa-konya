@@ -220,8 +220,7 @@ body {
   color: #e5e7eb;
 }
 
-.profile-center .profile-avatar-svg,
 .profile-center svg.profile-avatar {
   width: 100px;
-  height: 100px;
+  height: 100px; 
 }
