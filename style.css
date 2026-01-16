@@ -225,3 +225,8 @@ body {
     height: 100%;
     object-fit: cover;
 }
+
+.avatar-frame {
+    width: 50px;      /* желаемый размер аватара */
+    height: 50px;     /* желаемый размер аватара */
+    border-radius: 50%;
