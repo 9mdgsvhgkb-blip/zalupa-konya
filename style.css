@@ -224,3 +224,9 @@ body {
     width: 50px !important:
     height: 50px !important;
 }
+
+.avatar-frame svg {
+    width: 100% !important;  
+    height: 100% !important;
+    display: block;        
+}
